@@ -1,0 +1,28 @@
+{
+  "apt": {
+    "mirror": "us-east-1.ec2"
+  },
+  "mysql" : {
+    "bind_address": "0.0.0.0",
+    "server_debian_password" : "",
+    "server_root_password" : "",
+    "server_repl_password" : "",
+    "tunable" : {
+      "slow_query_log" : "false",
+      "query_cache_limit" : "2M",
+      "query_cache_size" : "32M"
+
+    }
+  },
+  "wercker-mysql" : {
+    "host": "%",
+    "username": "wercker",
+    "password": ""
+  },
+  "run_list": [
+    "recipe[apt]",
+    "recipe[mysql::server]",
+    "recipe[wercker-mysql::create_wercker_user]",
+    "recipe[wercker-mysql::create_wercker_database]"
+  ]
+}
