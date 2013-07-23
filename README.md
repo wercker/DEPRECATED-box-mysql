@@ -2,7 +2,7 @@
 
 This box provides mysql as a wercker service.
 
-# What's new in 0.0.7
+# What's new
 
 - Lock apt cookbook to 1.8.2
 
