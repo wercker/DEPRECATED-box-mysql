@@ -12,6 +12,7 @@ script : sudo chef-solo -c $WERCKER_SOURCE_DIR/solo.rb -j $WERCKER_SOURCE_DIR/so
 env:
   WERCKER_MYSQL_USERNAME: wercker
   WERCKER_MYSQL_PASSWORD: ""
+  WERCKER_MYSQL_HOST: $$HOST$$
   WERCKER_MYSQL_PORT: 3306
   WERCKER_MYSQL_DATABASE: werckerdb1
   WERCKER_MYSQL_URL: mysql://wercker:@$$HOST$$:3306/werckerdb1
