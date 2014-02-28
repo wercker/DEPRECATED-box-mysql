@@ -4,9 +4,9 @@
   },
   "mysql" : {
     "bind_address": "0.0.0.0",
-    "server_debian_password" : "",
-    "server_root_password" : "",
-    "server_repl_password" : "",
+    "server_debian_password" : "wercker",
+    "server_root_password" : "wercker",
+    "server_repl_password" : "wercker",
     "tunable" : {
       "slow_query_log" : "false",
       "query_cache_limit" : "2M",
@@ -17,7 +17,7 @@
   "wercker-mysql" : {
     "host": "%",
     "username": "wercker",
-    "password": ""
+    "password": "wercker"
   },
   "run_list": [
     "recipe[apt]",
