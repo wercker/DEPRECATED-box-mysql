@@ -1,5 +1,5 @@
 name: mysql
-version: 0.0.8
+version: 1.0.0
 inherits: wercker/ubuntu12.04-chef10.18.2@0.0.8
 type : service
 platform : ubuntu@12.04
@@ -11,7 +11,7 @@ packages :
 script : sudo chef-solo -c $WERCKER_SOURCE_DIR/solo.rb -j $WERCKER_SOURCE_DIR/solo.json -l debug
 env:
   WERCKER_MYSQL_USERNAME: wercker
-  WERCKER_MYSQL_PASSWORD: password
+  WERCKER_MYSQL_PASSWORD: wercker
   WERCKER_MYSQL_HOST: $$HOST$$
   WERCKER_MYSQL_PORT: 3306
   WERCKER_MYSQL_DATABASE: werckerdb1
