@@ -4,7 +4,7 @@ This box provides mysql as a wercker service.
 
 # What's new
 
-- Change value of `WERCKER_MYSQL_PASSWORD` to `wercker`.
+- Add password to `WERCKER_MYSQL_URL`.
 
 # License
 
@@ -30,6 +30,10 @@ IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 # Changelog
+
+## 1.0.1
+
+- Add password to `WERCKER_MYSQL_URL`.
 
 ## 1.0.0
 
